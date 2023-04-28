@@ -24,7 +24,7 @@ const NavBar = () => {
 	];
 	return (
 		<div className='w-full bg-colorPrimary'>
-			<div className=' max-w-6xl mx-auto p-4 flex items-center justify-between'>
+			<div className=' width flex items-center justify-between'>
 				{/* Logo */}
 				<div className=''>
 					<Link>
@@ -38,11 +38,11 @@ const NavBar = () => {
 				</div>
 
 				{/* Desktop Links */}
-				<div className='hidden'>
-					<ul>
+				<div className='hidden md:flex'>
+					<ul className='flex items-center justify-between gap-10 lg:gap-20 xl:gap-24 text-white'>
 						{/* map through links of array */}
 						{links.map(({ id, link }) => (
-							<li key={id}>
+							<li className=' text-sm lg:text-base' key={id}>
 								<Link to=''>{link}</Link>
 							</li>
 						))}
@@ -50,7 +50,7 @@ const NavBar = () => {
 				</div>
 
 				{/* Button */}
-				<div className='hidden'>
+				<div className='hidden md:flex'>
 					<button className='bg-white text-colorPrimary btn'>
 						<Link to=''>Get Started</Link>
 					</button>
