@@ -18,56 +18,56 @@ const Restaurant = () => {
 		},
 		{
 			id: 2,
-			h1: 'KFC',
+			h1: 'CHICKEN REPUBLIC',
 			src: Food2,
 			img: <HiOutlineHeart />,
 		},
 		{
 			id: 3,
-			h1: 'KFC',
+			h1: 'AMALA SKY',
 			src: Food3,
 			img: <HiOutlineHeart />,
 		},
 		{
 			id: 4,
-			h1: 'KFC',
+			h1: 'KILIMANJARO',
 			src: Food4,
 			img: <HiOutlineHeart />,
 		},
 		{
 			id: 5,
-			h1: 'KFC',
+			h1: 'OLA MUMMY',
 			src: Food5,
 			img: <HiOutlineHeart />,
 		},
 		{
 			id: 6,
-			h1: 'KFC',
+			h1: 'OFADA SPOT',
 			src: Food6,
 			img: <HiOutlineHeart />,
 		},
 	];
 	return (
 		<div className='w-full'>
-			<div className=' width'>
+			<div className=' width conPad'>
 				{/* Header */}
-				<div>
+				<div className='conH2'>
 					<h2>Popular Restaurants</h2>
 				</div>
 
 				{/* Grids */}
-				<div className=''>
+				<div className='grid sm:grid-cols-2 gap-5 lg:gap-7 md:grid-cols-3'>
 					{/* grid sub content */}
 					{/* map through links of array */}
 					{grids.map(({ id, h1, src, img }) => (
 						<div key={id}>
-							<div className=' aspect-[1/.5] overflow-hidden'>
-								<img className='' src={src} alt='' />
+							<div className=' aspect-[2/1.5] overflow-hidden rounded-[2rem]'>
+								<img className='w-full' src={src} alt='' />
 							</div>
-							<h2>{h1}</h2>
-							<p>
+							<h2 className='font-bold text-xl mt-2'>{h1}</h2>
+							<p className='flex items-center gap-1'>
 								{img} 87%
-								<span> (791)</span>
+								<span className=' text-lightGray'> (791)</span>
 							</p>
 						</div>
 					))}

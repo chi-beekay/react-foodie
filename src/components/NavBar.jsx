@@ -42,7 +42,7 @@ const NavBar = () => {
 					<ul className='flex items-center justify-between gap-10 lg:gap-20 xl:gap-24 text-white'>
 						{/* map through links of array */}
 						{links.map(({ id, link }) => (
-							<li className=' text-sm lg:text-base' key={id}>
+							<li className=' text-sm lg:text-base hover:underline' key={id}>
 								<Link to=''>{link}</Link>
 							</li>
 						))}
@@ -51,7 +51,7 @@ const NavBar = () => {
 
 				{/* Button */}
 				<div className='hidden md:flex'>
-					<button className='bg-white text-colorPrimary btn'>
+					<button className='bg-white text-colorPrimary btn hover:bg-slate-50'>
 						<Link to=''>Get Started</Link>
 					</button>
 				</div>
@@ -95,7 +95,7 @@ const NavBar = () => {
 							<ul>
 								{/* map through links of array */}
 								{links.map(({ id, link }) => (
-									<li className='text-xl py-2' key={id}>
+									<li className='text-xl py-2 ' key={id}>
 										<Link to=''>{link}</Link>
 									</li>
 								))}

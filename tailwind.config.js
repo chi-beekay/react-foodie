@@ -8,6 +8,7 @@ export default {
 				colorCheck: '#2D2A2A',
 				darkGray: '#322D2D',
 				lightGray: '#707070',
+				opacGreen: 'rgba(213, 243, 222, 0.5)',
 			},
 		},
 		screens: {

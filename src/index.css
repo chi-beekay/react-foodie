@@ -18,4 +18,12 @@
   .width {
     @apply max-w-6xl mx-auto p-4
   }
+
+  .conPad {
+    @apply my-12
+  }
+
+  .conH2 {
+    @apply my-10 text-center font-monts font-bold text-[2rem]
+  }
 }
