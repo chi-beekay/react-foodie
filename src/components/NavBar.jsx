@@ -68,15 +68,15 @@ const NavBar = () => {
 			<div
 				className={
 					nav
-						? 'md:hidden fixed left-0 top-0 w-full h-full bg-gray-900/70 backdrop-blur'
+						? 'md:hidden fixed left-0 top-0 w-full h-full bg-gray-900/70 backdrop-blur z-50'
 						: ''
 				}>
 				<div>
 					<div
 						className={
 							nav
-								? 'fixed left-0 top-0 w-4/5 h-full bg-colorPrimary p-5 text-white ease-out duration-700'
-								: 'fixed top-0 left-[-100%] w-4/5 p-5 h-full ease-in duration-700'
+								? 'fixed left-0 top-0 w-4/5 h-full bg-colorPrimary p-5 text-white ease-out duration-700 z-50'
+								: 'fixed top-0 left-[-100%] w-4/5 p-5 h-full ease-in duration-700 z-50'
 						}>
 						<div className='flex w-full items-center justify-between'>
 							{/* logo */}

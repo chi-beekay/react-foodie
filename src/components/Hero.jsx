@@ -9,7 +9,7 @@ const Hero = () => {
 				{/* Hero text */}
 				<div>
 					<div className=' mt-5 lg:mt-8'>
-						<h1 className=' font-extrabold font-monts text-3xl sm:text-4xl md:text-[2.5rem] lg:text-[3rem]'>
+						<h1 className=' font-extrabold font-monts xstext-3xl sm:text-4xl md:text-[2.5rem] lg:text-[3rem]'>
 							Delivering Satisfaction
 						</h1>
 						<h1 className=' font-monts text-colorPrimary text-3xl sm:text-4xl md:text-[2.5rem] lg:text-[3rem] mt-4 font-extrabold'>

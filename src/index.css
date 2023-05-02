@@ -24,6 +24,14 @@
   }
 
   .conH2 {
-    @apply my-10 text-center font-monts font-bold text-[2rem]
+    @apply my-10 text-center font-monts font-bold xs:text-[2rem]
+  }
+
+  .li {
+    @apply text-sm lg:text-base hover:underline text-white mt-2
+  }
+
+  .h2 {
+    @apply text-white font-bold text-xl font-monts
   }
 }

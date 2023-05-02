@@ -44,10 +44,8 @@ const Category = () => {
 				<div className='flex flex-wrap items-center justify-center gap-10 md:px-10 lg:px-32'>
 					{/* button */}
 					{cates.map(({ id, cate }) => (
-						<Link>
-							<div
-								key={id}
-								className='bg-colorPrimary border-2 border-colorPrimary hover:bg-white hover:border-2 hover:border-colorPrimary hover:text-colorPrimary text-white w-32 px-8 py-6 rounded-3xl'>
+						<Link key={id}>
+							<div className='bg-colorPrimary border-2 border-colorPrimary hover:bg-white hover:border-2 hover:border-colorPrimary hover:text-colorPrimary text-white w-32 px-7 py-6 rounded-3xl ease-in duration-300'>
 								<div className='flex items-center justify-center text-xs font-bold '>
 									{cate}
 								</div>
